@@ -1,0 +1,169 @@
+{
+  "contracts": {
+    "CFunding": {
+      "address": "0xe4e6603c0aa1ef53e3b10144aacd4477ba8378a7",
+      "constructorCode": "608060405234801561001057600080fd5b506108c6806100206000396000f3fe",
+      "bodyBytecodeHash": "f159bbdf812c74ad1716ef23af578b3c3bec14f5ec0a731a4b12b72bb37e296b",
+      "localBytecodeHash": "c56642203ecf89f19d7bfa15a9fb30c2c082d3a29146180a4e74c0cdc6ae95b8",
+      "deployedBytecodeHash": "c56642203ecf89f19d7bfa15a9fb30c2c082d3a29146180a4e74c0cdc6ae95b8",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_struct<CFunding.Campaign>": {
+          "id": "t_struct<CFunding.Campaign>",
+          "kind": "struct",
+          "label": "CFunding.Campaign",
+          "members": [
+            {
+              "label": "beneficiary",
+              "astId": 24,
+              "type": "t_address_payable",
+              "src": "484:27:0"
+            },
+            {
+              "label": "fundingGoal",
+              "astId": 26,
+              "type": "t_uint256",
+              "src": "522:16:0"
+            },
+            {
+              "label": "numFunders",
+              "astId": 28,
+              "type": "t_uint256",
+              "src": "549:15:0"
+            },
+            {
+              "label": "amount",
+              "astId": 30,
+              "type": "t_uint256",
+              "src": "575:11:0"
+            },
+            {
+              "label": "funders",
+              "astId": 34,
+              "type": "t_mapping<t_struct<CFunding.Funder>>",
+              "src": "597:32:0"
+            }
+          ]
+        },
+        "t_address_payable": {
+          "id": "t_address_payable",
+          "kind": "elementary",
+          "label": "address payable"
+        },
+        "t_struct<CFunding.Funder>": {
+          "id": "t_struct<CFunding.Funder>",
+          "kind": "struct",
+          "label": "CFunding.Funder",
+          "members": [
+            {
+              "label": "addr",
+              "astId": 19,
+              "type": "t_address",
+              "src": "407:12:0"
+            },
+            {
+              "label": "amount",
+              "astId": 21,
+              "type": "t_uint256",
+              "src": "430:11:0"
+            }
+          ]
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_mapping<t_struct<CFunding.Funder>>": {
+          "id": "t_mapping<t_struct<CFunding.Funder>>",
+          "valueType": "t_struct<CFunding.Funder>",
+          "label": "mapping(key => CFunding.Funder)",
+          "kind": "mapping"
+        },
+        "t_mapping<t_struct<CFunding.Campaign>>": {
+          "id": "t_mapping<t_struct<CFunding.Campaign>>",
+          "valueType": "t_struct<CFunding.Campaign>",
+          "label": "mapping(key => CFunding.Campaign)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "zos-lib\\contracts\\Initializable.sol",
+          "label": "initialized",
+          "astId": 552,
+          "type": "t_bool",
+          "src": "757:24:3"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib\\contracts\\Initializable.sol",
+          "label": "initializing",
+          "astId": 554,
+          "type": "t_bool",
+          "src": "876:25:3"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib\\contracts\\Initializable.sol",
+          "label": "______gap",
+          "astId": 603,
+          "type": "t_array:50<t_uint256>",
+          "src": "1891:29:3"
+        },
+        {
+          "contract": "CFunding",
+          "path": "..\\..\\..\\..\\..\\..\\C\\Users\\stude\\Documents\\Projects\\Dapps\\crowdfund\\contracts\\CFunding.sol",
+          "label": "timestamp",
+          "astId": 6,
+          "type": "t_uint256",
+          "src": "213:21:0"
+        },
+        {
+          "contract": "CFunding",
+          "path": "..\\..\\..\\..\\..\\..\\C\\Users\\stude\\Documents\\Projects\\Dapps\\crowdfund\\contracts\\CFunding.sol",
+          "label": "numCampaigns",
+          "astId": 37,
+          "type": "t_uint256",
+          "src": "645:17:0"
+        },
+        {
+          "contract": "CFunding",
+          "path": "..\\..\\..\\..\\..\\..\\C\\Users\\stude\\Documents\\Projects\\Dapps\\crowdfund\\contracts\\CFunding.sol",
+          "label": "campaigns",
+          "astId": 41,
+          "type": "t_mapping<t_struct<CFunding.Campaign>>",
+          "src": "669:36:0"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {},
+  "zosversion": "2",
+  "version": "0.1.0"
+}

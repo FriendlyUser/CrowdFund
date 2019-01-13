@@ -1,5 +1,5 @@
-let Election = artifacts.require("./Election.sol");
+let CrowdFunding = artifacts.require("./CrowdFunding.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(Election).then(() => console.log(Election.address))
+  deployer.deploy(CrowdFunding).then(() => console.log(CrowdFunding.address))
 };
