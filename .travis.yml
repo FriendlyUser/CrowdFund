@@ -19,13 +19,11 @@ addons:
 before_install:
   - export CXX="g++-4.8"
   - npm install -g npm@latest
-  - npm install -g ganache-cli truffle
+  - npm install -g remix-tests truffle
 
 install:
   - npm install 
-  - npm -g install remix-tests
 
 script:
   - truffle compile
-  - ganache-cli &
   - remix-tests tests/
