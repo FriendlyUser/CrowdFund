@@ -28,4 +28,4 @@ install:
 script:
   - truffle compile
   - ganache-cli &
-  - remix-tests contracts/
+  - remix-tests tests/
