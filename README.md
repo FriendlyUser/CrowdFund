@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/FriendlyUser/CrowdFund.svg?branch=master)](https://travis-ci.org/FriendlyUser/CrowdFund)
+
 ##### CrowdFund
 
 View Online at https://oneclickdapp.com/karl-ultra/
